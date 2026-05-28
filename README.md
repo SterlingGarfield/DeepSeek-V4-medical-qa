@@ -2,6 +2,8 @@
 
 Code for the paper: *DeepSeek-V4 in Clinical Reasoning: Flash vs. Pro and the Scale Reversal in Medical Question Answering*
 
+> [中文 README](README_zh.md)
+
 ## Setup
 
 ```bash
