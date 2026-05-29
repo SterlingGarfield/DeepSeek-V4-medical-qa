@@ -1,4 +1,3 @@
-"""Diagnose V4-Pro output format issues."""
 from utils import load_results
 
 r = load_results("../data/all_results_deepseek-v4-pro_20260525_010733.jsonl")
@@ -15,7 +14,6 @@ for strat in ["zero_shot", "cot", "few_shot", "structured"]:
     print(f"  None predictions: {len(none_pred)}/{total}")
     print(f"  Wrong answers:    {len(wrong_format)}/{total}")
 
-    # Show 2 examples of None predictions
     if none_pred:
         print(f"\n  --- None prediction examples ---")
         for c in none_pred[:2]:
@@ -24,7 +22,6 @@ for strat in ["zero_shot", "cot", "few_shot", "structured"]:
             print(f"  Raw:  {raw}")
             print()
 
-    # Show 2 examples of wrong answers (to check if model is wrong or extractor is wrong)
     if wrong_format:
         print(f"  --- Wrong answer examples ---")
         for c in wrong_format[:2]:

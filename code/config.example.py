@@ -2,7 +2,7 @@
 
 import os
 
-# DeepSeek API（在此填入你的 Key）
+# DeepSeek API
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "YOUR_API_KEY_HERE")
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 
